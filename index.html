@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/imgs/BenCarL.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- JS -->
+    <script src="./assets/js/jquery-3.5.0.min.js"></script>
+
+    <title>BenCar</title>
+</head>
+<body>
+
+    <div class="start">
+        <img src="./assets/imgs/BenCarPB.png" alt="">
+    </div>
+
+    <div class="master">
+        <header>
+            <img class="logo" src="./assets/imgs/BenCarPB.png" alt="BenCar">
+            <span>Seu carro em boas mãos</span>
+        </header>
+
+        <aside>
+            <ul>
+                <a href="#Inicio" class="ativo"><li>INÍCIO</li></a>
+                <a href="#Placas"><li>CLIENTES</li></a>
+                <a href="#Placas"><li>PLACAS</li></a>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="head">
+                <input type="text" placeholder="Nome do cliente">
+                <button onclick="Cadastro()" class="btn-novo">
+                    <ion-icon name="add"></ion-icon>
+                    <span>Cadastrar</span>
+                </button>
+            </div>
+            
+            <table>
+                <thead>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                    <th>Placa</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Timoteo</td>
+                        <td>00012345687</td>
+                        <td>92 99454-8975</td>
+                        <td>RIO2kAM</td>
+                        <td>
+                            <button class="btn-editar" onclick="Editar()"><ion-icon name="pencil"></ion-icon></button>
+                            <button class="btn-deletar" onclick="Deletar()"><ion-icon name="trash"></ion-icon></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <!-- PopUps -->
+
+        <div class="back-cad" onclick="hide()"></div>
+        
+        <!-- Cadastro -->
+        
+        <div class="cadastro">
+            <form id="cadastro">
+                <h1>Cadastro de Cliente</h1>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
+                <input type="text" name="placaCarro" id="placaCarro" placeholder="Placa" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        
+        <!-- Editar -->
+        <div class="editar">
+            <form id="editar">
+                <h1>Editar Cliente</h1>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
+                <input type="text" name="placaCarro" id="placaCarro" placeholder="Placa" required>
+                <button type="submit">Editar</button>
+            </form>
+        </div>
+        
+        <!-- Deletar -->
+        <div class="deletar">
+            <form id="deletar">
+                <h1>Deletar Cliente</h1>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                <button type="submit">Deletar</button>
+            </form>
+        </div>
+        
+        <footer>
+            &copy;Desenvolvido por BENTECH COMPANY
+        </footer>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

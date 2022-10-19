@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.start {
+    background: linear-gradient(to right, #f00, #000);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: #fff;
+}
+
+header {
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    height: 9.5em;
+    align-items: center;
+    background: linear-gradient(to right, #f00, #000);
+}
+
+.logo {
+    width: 150px;
+    padding: 1em;
+}
+
+header span {
+    color: #fff;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-style: italic;
+    margin-left: .5em;
+}
+
+aside {
+    position: fixed;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin-top: .5em;
+    width: 9em;
+}
+
+aside ul a {
+    /* background: #ff6868; */
+    color: #000;
+    margin-top: 1em;
+    padding: .5em 1em .5em 1em;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    transition: .5s ease;
+}
+
+aside ul a:hover {
+    background: #ff6868;
+}
+
+aside ul a:hover li {
+    margin-left: 1em;
+}
+
+.ativo {
+    background: #f00;
+    color: #fff;
+    transition: .5s ease;
+}
+
+/* Main */
+
+main {
+    margin-left: 20em;
+    margin-top: 4em;
+    font-family: sans-serif;
+}
+
+main .head {
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+}
+
+main .head input {
+    font-size: 2em;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;width: 22em;
+    width: 49em;
+}
+
+main .head button {
+    font-size: 2em;
+    background: #ff6868;
+    border: none;
+    border-radius: .2em;
+    transition: .5s;
+    display: flex;
+    cursor: pointer;
+    padding: .2em;
+    margin-right: 3em;
+}
+
+main .head button span {
+    display: none;
+}
+
+main .head button:hover span {
+    display: flex;
+}
+
+table {
+    width: 70em;
+    background: #fff;
+    justify-content: space-between;
+    font-size: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 7px 40px rgba(0, 0, 0, .3);
+}
+
+table tbody tr td {
+    padding: .5em;
+}
+
+table thead th {
+    text-align: start;
+    padding: .5em;
+    background: #d1d1d1;
+}
+
+table thead th:first-child {
+    border-top-left-radius: 1em;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 1em;
+    text-align: center;
+}
+
+table tbody tr td:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-editar, .btn-deletar {
+    font-size: 1em;
+    border: none;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: .5em;
+    transition: .5s;
+}
+
+.btn-editar {
+    background: #ffd900;
+}
+
+.btn-editar:hover {
+    background: #ffe345;
+}
+
+.btn-deletar {
+    background: #ff6868;
+    margin-left: .5em;
+}
+
+.btn-deletar:hover {
+    background: #ff1e1e;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 5em;
+}
+
+/* PopUps */
+
+.back-cad {
+    display: none;
+    background: rgba(0, 0, 0, .5) !important;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+.cadastro, .editar, .deletar {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cadastro, #editar, #deletar {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 2em;
+    align-items: center;
+    border-radius: 2em;
+}
+
+#cadastro h1,
+#editar h1,
+#deletar h1 {
+    font-family: sans-serif;
+    border-bottom: 5px solid #f00;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+}
+
+#cadastro input,
+#editar input,
+#deletar input {
+    font-size: 1.9em;
+    margin-bottom: .5em;
+    width: 22em;
+    outline: none;
+    border: none;
+    padding: .5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    transition: .5s ease;
+}
+
+#cadastro input:hover,
+#editar input:hover,
+#deletar input:hover {
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .5);
+}
+
+#cadastro button,
+#editar button,
+#deletar button {
+    width: 7em;
+    font-size: 1.5em;
+    border: none;
+    background: #f00;
+    color: #fff;
+    padding: .2em;
+    border-radius: .5em;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+#cadastro button:hover,
+#editar button:hover,
+#deletar button:hover {
+    background: rgb(153, 0, 0);
+}
