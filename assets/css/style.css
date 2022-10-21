@@ -51,7 +51,7 @@ aside ul {
     font-size: 1.5em;
     font-family: sans-serif;
     margin-top: .5em;
-    width: 9em;
+    width: 10em;
 }
 
 aside ul a {
@@ -66,6 +66,7 @@ aside ul a {
 
 aside ul a:hover {
     background: #ff6868;
+    color: #fff;
 }
 
 aside ul a:hover li {
@@ -108,19 +109,28 @@ main .head button {
     background: #ff6868;
     border: none;
     border-radius: .2em;
-    transition: .5s;
+    transition: 1s;
     display: flex;
     cursor: pointer;
     padding: .2em;
     margin-right: 3em;
+    width: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 main .head button span {
     display: none;
+    transition: 1s;
 }
 
 main .head button:hover span {
     display: flex;
+}
+
+main .head button:hover {
+    width: 6em;
 }
 
 table {
@@ -164,6 +174,7 @@ table tbody tr td:last-child {
     cursor: pointer;
     border-radius: .5em;
     transition: .5s;
+    width: 2em;
 }
 
 .btn-editar {

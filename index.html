@@ -28,9 +28,9 @@
 
         <aside>
             <ul>
-                <a href="#Inicio" class="ativo"><li>INÍCIO</li></a>
-                <a href="#Placas"><li>CLIENTES</li></a>
-                <a href="#Placas"><li>PLACAS</li></a>
+                <a href="#Inicio" class="ativo"><li><ion-icon name="home"></ion-icon>&nbsp; INÍCIO</li></a>
+                <a href="#Placas"><li><ion-icon name="people"></ion-icon>&nbsp; CLIENTES</li></a>
+                <a href="#Placas"><li><ion-icon name="car-sport"></ion-icon>&nbsp; PLACAS</li></a>
             </ul>
         </aside>
 
@@ -43,27 +43,7 @@
                 </button>
             </div>
             
-            <table>
-                <thead>
-                    <th>Nome</th>
-                    <th>CPF</th>
-                    <th>Telefone</th>
-                    <th>Placa</th>
-                    <th>Ações</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Timoteo</td>
-                        <td>00012345687</td>
-                        <td>92 99454-8975</td>
-                        <td>RIO2kAM</td>
-                        <td>
-                            <button class="btn-editar" onclick="Editar()"><ion-icon name="pencil"></ion-icon></button>
-                            <button class="btn-deletar" onclick="Deletar()"><ion-icon name="trash"></ion-icon></button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <table id="table"></table>
         </main>
 
         <!-- PopUps -->
