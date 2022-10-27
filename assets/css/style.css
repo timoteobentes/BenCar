@@ -19,26 +19,10 @@ body {
     background: #fff;
 }
 
-header {
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-    height: 9.5em;
-    align-items: center;
-    background: linear-gradient(to right, #f00, #000);
-    width: 100%;
-}
-
 .logo {
     width: 150px;
     padding: 1em;
-}
-
-header span {
-    color: #fff;
-    font-size: 2.5em;
-    font-family: sans-serif;
-    font-style: italic;
-    margin-left: .5em;
+    margin-left: 2.5em;
 }
 
 #menu-mobile {
@@ -49,7 +33,9 @@ aside {
     position: fixed;
     transition: .5s;
     width: 15em;
-    overflow: auto;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #f00, #000);
 }
 
 aside ul {
@@ -63,11 +49,8 @@ aside ul {
 
 aside ul a {
     /* background: #ff6868; */
-    color: #000;
-    margin-top: 1em;
+    color: #fff;
     padding: .5em 1em .5em 1em;
-    border-top-right-radius: .5em;
-    border-bottom-right-radius: .5em;
     transition: .5s ease;
 }
 
@@ -81,18 +64,29 @@ aside ul a:hover li {
 }
 
 .ativo {
-    background: #f00;
-    color: #fff;
+    background: #fff;
+    color: #000;
     transition: .5s ease;
+}
+
+.ativo li {
+    margin-left: 1em;
 }
 
 /* Main */
 
 main {
     margin-left: 20em;
-    margin-top: 4em;
     font-family: sans-serif;
     transition: .5s;
+}
+
+.title {
+    padding: 1em 6em 1em 0;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    font-style: oblique;
 }
 
 main .head {

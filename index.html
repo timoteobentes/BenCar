@@ -17,22 +17,20 @@
 <body>
     
     <div class="master">
-        <header>
-            <img class="logo" src="./assets/imgs/BenCarPB.png" alt="BenCar">
-            <span>Seu carro em boas mãos</span>
-        </header>
 
         <ion-icon id="menu-mobile" name="menu"></ion-icon>
 
         <aside id="nav">
+            <img class="logo" src="./assets/imgs/BenCarPB.png" alt="BenCar">
             <ul>
-                <a href="index.html" class="ativo" id="inicio" onclick="inicio()"><li><ion-icon name="home"></ion-icon>&nbsp; INÍCIO</li></a>
-                <a href="clientes.html" id="clientes" onclick="clientes()"><li><ion-icon name="people"></ion-icon>&nbsp; CLIENTES</li></a>
-                <a href="placas.html" id="placas" onclick="placas()"><li><ion-icon name="car-sport"></ion-icon>&nbsp; PLACAS</li></a>
+                <a href="index.html" class="ativo"><li><ion-icon name="home"></ion-icon>&nbsp; INÍCIO</li></a>
+                <a href="clientes.html"><li><ion-icon name="people"></ion-icon>&nbsp; CLIENTES</li></a>
+                <a href="placas.html"><li><ion-icon name="car-sport"></ion-icon>&nbsp; PLACAS</li></a>
             </ul>
         </aside>
 
         <main id="main">
+            <h1 class="title">Sistema Bencar</h1>
             <div class="head">
                 <input onkeyup="pesquisa()" id="pesquisa" type="text" placeholder="Nome do cliente">
                 <button onclick="Cadastro()" class="btn-novo">

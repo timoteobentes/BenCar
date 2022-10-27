@@ -12,27 +12,25 @@
     <!-- JS -->
     <script src="./assets/js/jquery-3.5.0.min.js"></script>
 
-    <title>BenCar - clientes</title>
+    <title>BenCar</title>
 </head>
 <body>
-
+    
     <div class="master">
-        <header>
-            <img class="logo" src="./assets/imgs/BenCarPB.png" alt="BenCar">
-            <span>Seu carro em boas mãos</span>
-        </header>
 
         <ion-icon id="menu-mobile" name="menu"></ion-icon>
 
         <aside id="nav">
+            <img class="logo" src="./assets/imgs/BenCarPB.png" alt="BenCar">
             <ul>
-                <a href="index.html" onclick="inicio()"><li><ion-icon name="home"></ion-icon>&nbsp; INÍCIO</li></a>
-                <a href="clientes.html" class="ativo" onclick="clientes()"><li><ion-icon name="people"></ion-icon>&nbsp; CLIENTES</li></a>
-                <a href="placas.html" onclick="placas()"><li><ion-icon name="car-sport"></ion-icon>&nbsp; PLACAS</li></a>
+                <a href="index.html"><li><ion-icon name="home"></ion-icon>&nbsp; INÍCIO</li></a>
+                <a href="clientes.html" class="ativo"><li><ion-icon name="people"></ion-icon>&nbsp; CLIENTES</li></a>
+                <a href="placas.html"><li><ion-icon name="car-sport"></ion-icon>&nbsp; PLACAS</li></a>
             </ul>
         </aside>
 
         <main id="main">
+            <h1 class="title">Sistema Bencar</h1>
             <div class="head">
                 <input onkeyup="pesquisa()" id="pesquisa" type="text" placeholder="Nome do cliente">
                 <button onclick="Cadastro()" class="btn-novo">
@@ -65,9 +63,8 @@
         <div class="editar">
             <form id="editar">
                 <h1>Editar Cliente</h1>
-                <input type="hidden" class="idE" name="_id" id="_id" placeholder="ID" required>
+                <input type="hidden" class="cpf" name="cpf" id="cpf" placeholder="ID" required>
                 <input type="text" class="nomeE" name="nome" id="nome" placeholder="Nome" required>
-                <input type="text" class="cpfE" name="cpf" id="cpf" placeholder="CPF" required>
                 <input type="text" class="telefoneE" name="telefone" id="telefone" placeholder="Telefone" required>
                 <input type="text" class="placaE" name="placaCarro" id="placaCarro" placeholder="Placa" required>
                 <button type="submit">Editar</button>
@@ -78,7 +75,7 @@
         <div class="deletar">
             <form id="deletar">
                 <h1>Deletar Cliente</h1>
-                <input type="hidden" class="idD" name="_id" id="_id" placeholder="ID" required>
+                <input type="hidden" class="cpfD" name="cpf" id="cpfD" placeholder="ID" required>
                 <input type="text" class="nomeD" name="nome" id="nome" placeholder="Nome" required>
                 <button type="submit">Deletar</button>
             </form>
