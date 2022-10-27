@@ -9,7 +9,7 @@ A API usada neste projeto está nesse repositório [BencarAPI](https://github.co
 
 Interfaces apresentadas:
 
-## inicio
+## Inicio
 
 ![Capturar](./assets/imgs/inicio.PNG)
 
