@@ -25,6 +25,7 @@ header {
     height: 9.5em;
     align-items: center;
     background: linear-gradient(to right, #f00, #000);
+    width: 100%;
 }
 
 .logo {
@@ -40,8 +41,15 @@ header span {
     margin-left: .5em;
 }
 
+#menu-mobile {
+    display: none;
+}
+
 aside {
     position: fixed;
+    transition: .5s;
+    width: 15em;
+    overflow: auto;
 }
 
 aside ul {
@@ -51,7 +59,6 @@ aside ul {
     font-size: 1.5em;
     font-family: sans-serif;
     margin-top: .5em;
-    width: 10em;
 }
 
 aside ul a {
@@ -85,6 +92,7 @@ main {
     margin-left: 20em;
     margin-top: 4em;
     font-family: sans-serif;
+    transition: .5s;
 }
 
 main .head {
@@ -134,7 +142,7 @@ main .head button:hover {
 }
 
 table {
-    width: 70em;
+    width: 95%;
     background: #fff;
     justify-content: space-between;
     font-size: 1.5em;
@@ -144,6 +152,10 @@ table {
 
 table tbody tr td {
     padding: .5em;
+}
+
+table tbody tr:hover {
+    background: rgba(0, 0, 0, .1);
 }
 
 table thead th {
@@ -276,4 +288,73 @@ footer {
 #editar button:hover,
 #deletar button:hover {
     background: rgb(153, 0, 0);
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 950px) and (max-width: 1085px) {
+    .logo {
+        margin-left: 5em;
+    }
+
+    aside {
+        width: 0;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .res {
+        margin-left: 20em;
+    }
+
+    #menu-mobile {
+        display: flex;
+        font-size: 5em;
+        position: absolute;
+        top: .5em;
+        color: #fff;
+    }
+
+    .visivel {
+        display: block;
+        width: 15em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .logo {
+        margin-left: 5em;
+    }
+
+    header span {
+        display: none;
+    }
+
+    aside {
+        width: 0;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .res {
+        margin-left: 20em;
+    }
+
+    #menu-mobile {
+        display: flex;
+        font-size: 5em;
+        position: absolute;
+        top: .5em;
+        color: #fff;
+    }
+
+    .visivel {
+        display: block;
+        width: 15em;
+    }
 }

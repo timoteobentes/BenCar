@@ -12,10 +12,10 @@
     <!-- JS -->
     <script src="./assets/js/jquery-3.5.0.min.js"></script>
 
-    <title>BenCar</title>
+    <title>BenCar - clientes</title>
 </head>
 <body>
-    
+
     <div class="master">
         <header>
             <img class="logo" src="./assets/imgs/BenCarPB.png" alt="BenCar">
@@ -26,9 +26,9 @@
 
         <aside id="nav">
             <ul>
-                <a href="index.html" class="ativo" id="inicio" onclick="inicio()"><li><ion-icon name="home"></ion-icon>&nbsp; INÍCIO</li></a>
-                <a href="clientes.html" id="clientes" onclick="clientes()"><li><ion-icon name="people"></ion-icon>&nbsp; CLIENTES</li></a>
-                <a href="placas.html" id="placas" onclick="placas()"><li><ion-icon name="car-sport"></ion-icon>&nbsp; PLACAS</li></a>
+                <a href="index.html" onclick="inicio()"><li><ion-icon name="home"></ion-icon>&nbsp; INÍCIO</li></a>
+                <a href="clientes.html" class="ativo" onclick="clientes()"><li><ion-icon name="people"></ion-icon>&nbsp; CLIENTES</li></a>
+                <a href="placas.html" onclick="placas()"><li><ion-icon name="car-sport"></ion-icon>&nbsp; PLACAS</li></a>
             </ul>
         </aside>
 
@@ -65,8 +65,9 @@
         <div class="editar">
             <form id="editar">
                 <h1>Editar Cliente</h1>
-                <input type="hidden" class="cpf" name="cpf" id="cpf" placeholder="ID" required>
+                <input type="hidden" class="idE" name="_id" id="_id" placeholder="ID" required>
                 <input type="text" class="nomeE" name="nome" id="nome" placeholder="Nome" required>
+                <input type="text" class="cpfE" name="cpf" id="cpf" placeholder="CPF" required>
                 <input type="text" class="telefoneE" name="telefone" id="telefone" placeholder="Telefone" required>
                 <input type="text" class="placaE" name="placaCarro" id="placaCarro" placeholder="Placa" required>
                 <button type="submit">Editar</button>
@@ -77,7 +78,7 @@
         <div class="deletar">
             <form id="deletar">
                 <h1>Deletar Cliente</h1>
-                <input type="hidden" class="cpfD" name="cpf" id="cpfD" placeholder="ID" required>
+                <input type="hidden" class="idD" name="_id" id="_id" placeholder="ID" required>
                 <input type="text" class="nomeD" name="nome" id="nome" placeholder="Nome" required>
                 <button type="submit">Deletar</button>
             </form>
@@ -90,6 +91,6 @@
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/clientes.js"></script>
 </body>
 </html>

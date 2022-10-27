@@ -35,7 +35,6 @@ fetch("https://api-bencar.herokuapp.com/consulta", {
                     <th>Motorista</th>
                     <th>CPF</th>
                     <th>Telefone</th>
-                    <th>Placa</th>
                     <th>Ações</th>
                 </thead>`
     json.forEach((data) => {
@@ -43,7 +42,6 @@ fetch("https://api-bencar.herokuapp.com/consulta", {
                         <td>${data.nome}</td>
                         <td>${data.cpf}</td>
                         <td>${data.telefone}</td>
-                        <td>${data.placaCarro}</td>
                         <td>
                             <button class="btn-editar" onclick="editar('${data.cpf}')"><ion-icon name="pencil"></ion-icon></button>
                             <button class="btn-deletar" onclick="deletar('${data.cpf}')"><ion-icon name="trash"></ion-icon></button>
