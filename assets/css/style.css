@@ -299,7 +299,7 @@ footer {
     main {
         margin-left: 0;
     }
-
+    
     .res {
         margin-left: 20em;
     }
@@ -335,6 +335,11 @@ footer {
         margin-left: 0;
     }
 
+    .title {
+        font-size: 2em;
+        padding: 1em 0 1em 2em;
+    }
+
     .res {
         margin-left: 20em;
     }
@@ -343,8 +348,9 @@ footer {
         display: flex;
         font-size: 5em;
         position: absolute;
-        top: .5em;
-        color: #fff;
+        top: .1em;
+        color: #000;
+        z-index: 999;
     }
 
     .visivel {
