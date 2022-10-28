@@ -340,6 +340,10 @@ footer {
         padding: 1em 0 1em 2em;
     }
 
+    main .head input {
+        margin-left: .4em;
+    }
+
     .res {
         margin-left: 20em;
     }
